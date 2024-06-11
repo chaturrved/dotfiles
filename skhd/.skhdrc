@@ -46,6 +46,20 @@ ctrl + lalt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 #                  index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
 #                  yabai -m space --focus "${index}"
 
+# === switching spaces ===
+
+ctrl - h : yabai -m space --focus prev
+ctrl - l : yabai -m space --focus next
+ctrl - 1 : yabai -m space --focus 1
+ctrl - 2 : yabai -m space --focus 2
+ctrl - 3 : yabai -m space --focus 3
+ctrl - 4 : yabai -m space --focus 4
+ctrl - 5 : yabai -m space --focus 5
+ctrl - 6 : yabai -m space --focus 6
+ctrl - 7 : yabai -m space --focus 7
+ctrl - 8 : yabai -m space --focus 8
+ctrl - 9 : yabai -m space --focus 9
+ctrl - 0 : yabai -m space --focus 10
 
 
 # === send window to desktop and follow focus ===
@@ -79,8 +93,8 @@ ctrl + lalt - l : yabai -m window --resize right:100:0 || yabai -m window --resi
 
 
 # set insertion point in focused container (this is like i3 where you specify where the next window should tile)
-# ctrl + cmd - h : yabai -m window --insert south 
-# ctrl + cmd - v : yabai -m window --insert east
+ctrl + cmd - h : yabai -m window --insert south 
+ctrl + cmd - v : yabai -m window --insert east
 
 # === Layout ===
 
@@ -104,7 +118,7 @@ shift + alt - r : yabai -m space --rotate 270
 # filp along y-axis
 shift + alt - y : yabai -m space --mirror y-axis
 # flip along x-axis
-shift + alt - x : yabai -m space --mirror y-axis
+shift + alt - x : yabai -m space --mirror x-axis
 # balance out tree of windows (reset to default)
 shift + cmd - b : yabai -m space --balance
 
