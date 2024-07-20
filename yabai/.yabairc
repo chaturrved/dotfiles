@@ -15,6 +15,7 @@ yabai -m space 6 --label brain
 yabai -m space 7 --label comms 
 yabai -m space 8 --label finder
 yabai -m space 9 --label music
+yabai -m space 10 --label extra
 
 # specific space settings
 # yabai -m config --space mail layout stack
