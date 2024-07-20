@@ -1,6 +1,36 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+#aliases
+#
+
+alias hsp="history -p"
+
+# Dir list, nav
+alias pwdy="echo $(pwd) | pbcopy"
+alias cl="clear"
+alias z="cd"
+
+# Neovim
+alias v=nvim
+alias vim=nvim
+export VISUAL=nvim
+# export EDITOR="$VISUAL"
+
+#exit
+alias e="exit"
+
+# Tmux
+alias t=tmux
+
+# App shortcuts
+alias lg=lazygit
+alias ld=lazydocker
+
+# Obsidian
+alias oo='cd $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Praan'
+alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Praan/inbox/*.md'
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -76,7 +106,7 @@ export RUSTFLAGS='-L /opt/homebrew/lib'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git alias-finder)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -138,3 +168,19 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP binary.
+export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
+export PATH="$HOME/go/bin":$PATH
+
+
+# Herd injected PHP binary.
+export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/83/"

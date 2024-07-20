@@ -47,7 +47,8 @@ ctrl + lalt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 #                  yabai -m space --focus "${index}"
 
 # === switching spaces ===
-
+ctrl - s : yabai -m space --create
+ctrl - x : yabai -m space --destroy
 ctrl - left : yabai -m space --focus prev
 ctrl - right : yabai -m space --focus next
 ctrl - 1 : yabai -m space --focus 1
@@ -65,8 +66,8 @@ ctrl - 0 : yabai -m space --focus 10
 # === send window to desktop and follow focus ===
 
 shift + cmd - x : yabai -m window --space recent && yabai -m space --focus recent
-shift + cmd - z : yabai -m window --space prev && yabai -m space --focus prev
-shift + cmd - c : yabai -m window --space next && yabai -m space --focus next
+#shift + cmd - z : yabai -m window --space prev && yabai -m space --focus prev
+#shift + cmd - c : yabai -m window --space next && yabai -m space --focus next
 shift + cmd - 1 : yabai -m window --space  1 && yabai -m space --focus 1
 shift + cmd - 2 : yabai -m window --space  2 && yabai -m space --focus 2
 shift + cmd - 3 : yabai -m window --space  3 && yabai -m space --focus 3
